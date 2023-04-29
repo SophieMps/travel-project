@@ -12,6 +12,10 @@ body {
   display: grid;
   grid-gap: 64px;
 }
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
@@ -27,6 +31,7 @@ section {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 header {
@@ -97,6 +102,23 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
 main p {
   font-weight: 400;
   font-size: 16px;
@@ -104,6 +126,41 @@ main p {
   color: #272044;
 
   opacity: 0.7;
+}
+
+section.secondary {
+  background: #f8f8f8;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+
+.card h4 {
+  margin-top: 24px;
+}
+
+.card-footer {
+  padding-top: 30px;
+}
+
+.button {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  background-color: #462cb3;
+  text-align: center;
+  text-decoration: none;
+  align-items: end;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
