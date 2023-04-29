@@ -23,6 +23,14 @@ body {
 .grid-3-columns-1-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.header.grid {
+  grid-gap: 0;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
@@ -30,7 +38,7 @@ section {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -225,5 +233,12 @@ footer a {
 
   section {
     padding: 30px;
+  }
+
+  .header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
